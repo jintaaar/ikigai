@@ -165,7 +165,7 @@
 
 .member-gallery-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     
     justify-items: center;
 
@@ -208,13 +208,13 @@
 
 .member-card-name{
     color: #ffffff;
-    font-size: 1rem;
+    font-size: .8rem;
     margin-left: 1%;
 }
 
 .member-card-role{
     color: #777;
-    font-size: .80rem;
+    font-size: .7rem;
     margin-bottom: 1rem;
     margin-left: .10rem;
 }
