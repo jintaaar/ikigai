@@ -5,11 +5,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    margin: auto;
 }
 
 .gallery-container{
     width: 100%;
-    padding: 1.5rem;
+    padding-top: 1.5rem;
     box-sizing: border-box;
     margin-bottom: 2rem;
 }
