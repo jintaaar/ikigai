@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="discord-widget.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <div class="menu-container">  
+
+        <button class="menu-btn" id="menu-btn"><strong>☰</strong></button>
+                
+        <nav class="menu">
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="members.html">Members</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="news.html" class="active">News</a>
+            <a class="menu-join">Join us!</a>
+        </nav>
+        
+    </div>
+    
+    <div class="header">
+        <div class="head-container">
+            <div class="logo-title">
+                <div class="logo-name">𝗜𝗞𝗜𝗚𝗔𝗜 生き甲斐 𝗟𝗘𝗚𝗔𝗖𝗬</div>
+            </div>
+            
+            <div class="nav-buttons">
+
+                <div class="start">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="members.html">Members</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="news.html" class="active">News</a>
+                    </nav>
+                </div>
+
+                <div class="end">
+                    <a class="join">Join us!</a>
+                    
+                </div>
+
+            </div>
+
+            
+
+            
+
+            
+        </div>
+    </div>
+
+    <!-- Discord Widget Button -->
+    <div class="showcard-container"> <button class="show-card" onclick="showCard()">💭</button> </div>
+
+    <!-- Discord Widget Card -->
+    <div class="discord-widget">
+        <div class="discord-card" id="discord-card"> 
+            <div class="head">
+                <h3 class="serverName" id="serverName">My Server</h3>
+                    <button class="hide-card" onclick="closeCard()" id="hide">✗</button>
+            </div>
+
+            <p>
+                <div class="dot-symbol">●</div>
+                <div class="online-text"> 𝑶𝒏𝒍𝒊𝒏𝒆 - <span id="online">0</span> </div>
+            </p>
+
+            <div class="avatar-position">
+                <div class="avatars">
+
+                    <div class="avatar online">
+                        <img src="Discord-profiles/profile1.webp">
+                    </div>
+
+                    <div class="avatar online">
+                        <img src="Discord-profiles/profile2.webp">
+                    </div>
+
+                    <div class="avatar idle">
+                        <img src="Discord-profiles/profile3.webp">
+                    </div>
+
+                    <div class="avatar idle">
+                        <img src="Discord-profiles/profile4.webp">
+                    </div>
+
+                    <div class="avatar dnd">
+                        <img src="Discord-profiles/profile5.webp">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lower-part">
+                <a id="joinBtn" href="https://discord.com/invite/5m6chs7nX4" target="_blank">Join Server</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="news-page">
+
+            <div class="news-grid">
+
+                
+
+                <div class="news-container">
+
+                    <div class="news-title">𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚 𝑪𝒆𝒍𝒆𝒃𝒓𝒂𝒏𝒕𝒔</div>
+                    <div class="news-desc">𝑴𝒂𝒚 𝟐𝟎𝟐𝟐 𝑪𝒆𝒍𝒆𝒃𝒓𝒂𝒏𝒕𝒔</div>
+                    <div class="img-carousel">
+
+                        <button class="img-btn img-prev">‹</button>
+
+                        <div class="img-window">
+                            <div class="img-track">
+
+                                <img class="img-slide" src="bday/1.png" alt="">
+                                <img class="img-slide" src="bday/2.png" alt="">
+                                <img class="img-slide" src="bday/3.png" alt="">
+                                <img class="img-slide" src="bday/4.png" alt="">
+
+                            </div>
+                        </div>
+
+                        <button class="img-btn img-next">›</button>
+
+                    </div>
+                </div>
+
+                <div class="news-container news-panel">
+
+                    <div class="news-header">
+
+                        <button class="news-tab active" data-type="all">All</button>
+                        <button class="news-tab" data-type="news">News</button>
+                        <button class="news-tab" data-type="events">Events</button>
+                        <button class="news-tab" data-type="others">Others</button>
+
+                    </div>
+
+                    <div class="news-list">
+
+                        
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            
+
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="img-modal">
+
+        <div class="img-modal-box">
+
+            <button class="img-modal-close">×</button>
+
+            <img class="img-modal-content">
+
+        </div>
+
+    </div>
+
+    <script src="general.js"></script>
+    <script src="news-list.js"></script>
+    <script src="news.js"></script>
+    
+</body>
+
+</html>

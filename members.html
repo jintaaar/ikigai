@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝗜𝗞𝗜𝗚𝗔𝗜 生き甲斐 𝗟𝗘𝗚𝗔𝗖𝗬</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="discord-widget.css">
+    <link rel="stylesheet" href="members.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="menu-container">  
+
+            <button class="menu-btn" id="menu-btn"><strong>☰</strong></button>
+            <div class="menu-overlay" onclick="closeMenu()"></div>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="members.html" class="active">Members</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="news.html">News</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjyB8L9kWrnWd9bgaFZAZojtJx5KCW9Il7itQAc0xYwwFybQ/viewform" target="_blank" class="menu-join">Join us!</a>
+            </nav>
+            
+        </div>
+        
+        <div class="header">
+            <div class="head-container">
+                <div class="logo-title">
+                    <div class="logo-name">𝗜𝗞𝗜𝗚𝗔𝗜 生き甲斐 𝗟𝗘𝗚𝗔𝗖𝗬</div>
+                </div>
+                
+                <div class="nav-buttons">
+
+                    <div class="start">
+                        <nav>
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="members.html" class="active">Members</a>
+                            <a href="gallery.html">Gallery</a>
+                            <a href="news.html">News</a>
+                        </nav>
+                    </div>
+
+                    <div class="end">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjyB8L9kWrnWd9bgaFZAZojtJx5KCW9Il7itQAc0xYwwFybQ/viewform" target="_blank" class="join">Join us!</a>
+                        
+                    </div>
+
+                </div>
+
+                
+
+                
+
+                
+            </div>
+        </div>
+
+
+        <!-- Discord widget button -->
+        <div class="showcard-container"> <button class="show-card" onclick="showCard()">💭</button> </div>
+
+        <!-- Discord widget card -->
+        <div class="card">
+            <div class="discord-card" id="discord-card"> 
+                <div class="head">
+                    <h3 class="serverName" id="serverName">My Server</h3>
+                    <button class="hide-card" onclick="closeCard()" id="hide">✗</button>
+                </div>
+
+                <p>
+                    <div class="dot-symbol">●</div>
+                    <div class="online-text"> 𝑶𝒏𝒍𝒊𝒏𝒆 - <span id="online">0</span> </div>
+                </p>
+
+                <div class="avatar-position">
+                    <div class="avatars">
+
+                        <div class="avatar online">
+                            <img src="Discord-profiles/profile1.webp">
+                        </div>
+
+                        <div class="avatar online">
+                            <img src="Discord-profiles/profile2.webp">
+                        </div>
+
+                        <div class="avatar idle">
+                            <img src="Discord-profiles/profile3.webp">
+                        </div>
+
+                        <div class="avatar idle">
+                            <img src="Discord-profiles/profile4.webp">
+                        </div>
+
+                        <div class="avatar dnd">
+                            <img src="Discord-profiles/profile5.webp">
+                        </div>
+
+                    </div>
+                </div>
+    
+                <div class="lower-part">
+                    <a id="joinBtn" href="https://discord.com/invite/5m6chs7nX4" target="_blank">Join Server</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-overlay" onclick="closePanel()"></div>
+
+        <div class="profile-detail-panel">
+            <div class="dp-header">
+                <div class="dp-title">｡˚꒰ঌ 𝑴𝒆𝒎𝒃𝒆𝒓 𝑷𝒓𝒐𝒇𝒊𝒍𝒆 ໒꒱˚｡</div>
+                <div class="dp-close" onclick="closePanel()">✗</div>
+            </div>
+            <div class="dp-profile dp-row">              
+                <div class="dp-profile-start">
+                    <img class="dp-image" src="Discord-profiles/profile1.webp">
+                </div>
+
+                <div class="dp-profile-end">
+                    <div class="dp-detail-container">
+                        <div class="dp-label">𝒏𝒂𝒎𝒆</div>
+                        <div class="dp-name">𝒊𝒌𝒈_𝒏𝒂𝒃𝒊</div>
+                    </div>
+
+                    <div class="dp-detail-container">
+                        <div class="dp-label">𝒓𝒐𝒍𝒆</div>
+                        <div class="dp-detail dp-role">𝒇𝒐𝒖𝒏𝒅𝒆𝒓</div>
+                    </div>
+
+                    <div class="dp-detail-container">
+                        <div class="dp-label">𝒃𝒊𝒓𝒕𝒉𝒅𝒂𝒚</div>
+                        <div class="dp-detail dp-birthday">𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐</div>
+                    </div>
+
+                    <div class="dp-detail-container">
+                        <div class="dp-label">𝒎𝒆𝒎𝒃𝒆𝒓 𝒔𝒊𝒏𝒄𝒆</div>
+                        <div class="dp-detail dp-date">𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟐</div>
+                    </div> 
+                </div>
+            </div>
+            <div class="dp-profile dp-column">
+                <div class="dp-profile-title">𝑮𝒂𝒎𝒆 𝑪𝒐𝒍𝒍𝒆𝒄𝒕𝒊𝒐𝒏𝒔</div>
+                <div class="dp-profile-grid game-collection">
+                    
+                    
+                </div>
+            </div>
+
+            <div class="dp-profile dp-column">
+                <div class="dp-profile-title">𝑪𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏𝒔</div>
+                <div class="dp-profile-grid connections">
+
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="page">
+            <div class="members-page">
+                <div class="member-gallery-page">
+
+                    <div class="member-gallery-header">
+
+                        <div class="member-gallery-title">
+                            ｡˚꒰ঌ 𝑴𝒆𝒎𝒃𝒆𝒓 𝑮𝒂𝒍𝒍𝒆𝒓𝒚 ໒꒱˚｡
+                        </div>
+                        <div class="description">
+                            ✰ 𝟏𝟒𝟑 𝑨𝒄𝒕𝒊𝒗𝒆 𝒎𝒆𝒎𝒃𝒆𝒓𝒔
+                        </div>
+
+                        <div class="member-gallery-settings">
+
+                            <div class="start-settings">
+                                <div class="sort-by">
+                                    <select id="sort-field" onchange="render()">
+                                        <option value="id">Default</option>
+                                        <option value="name">by Name</option>
+                                        <option value="joined">by Date Joined</option>                                   
+                                        <option value="birthday">by Birthday</option>
+                                    </select>
+                                </div>
+
+                                <div class="sort-button-container">
+
+                                    <button class="sort-button" data-order="asc" onclick="setOrder('asc', this)">⬆ ASC</button>
+                                    <button class="sort-button" data-order="desc" onclick="setOrder('desc', this)">⬇ DESC</button>
+
+                                </div>
+                            </div>
+
+                            <div class="end-settings">
+                                <div class="toggle-view">
+
+                                    <button class="view-button active" data-view="grid" onclick="setView('grid')">⊞</button>
+                                    <button class="view-button" data-view="list" onclick="setView('list')">☰</button>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                            
+                    </div>
+
+                    <!-- Member gallery container-->
+                    <div class="member-gallery-container">
+
+                        <!-- Member profiles - Grid -->
+                        <div class="member-gallery-grid">
+
+                            
+
+                        
+                            
+                        </div>
+                    
+                    </div>
+
+                    
+
+                        
+
+                </div>  
+            </div>            
+
+        </div>
+
+        
+
+    </div> <!-- Container End -->
+
+    <script src="general.js"></script>
+    <script src="members-database.js"></script>
+    <script src="member-gallery.js"></script>
+    <script src="detail-panel.js"></script>
+    
+</body>
+</html>
