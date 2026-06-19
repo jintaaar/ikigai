@@ -1,0 +1,172 @@
+.about-page{
+
+    max-width: 1200px;
+    padding: 95px 20px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 30px;
+}
+
+.about-container{
+    width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.about-title{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.about-content{
+    color: #777;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.about-items{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.item-title{
+    color: white;
+    margin-bottom: .2rem;
+}
+
+.item-desc{
+    font-size: .8rem;
+}
+
+.item-bullet{
+    padding-left: 1rem;
+}
+
+.about-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #777;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-img{
+    background-color: lightblue;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-bottom: 1px solid #777;
+    
+}
+
+.about-body{
+    display: flex;
+    flex-direction: column;
+    padding: .50rem .70rem .65rem;
+}
+
+.about-content-grid{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.about-name{
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.about-role{
+    color: #777;
+    font-size: .80rem;
+    margin-bottom: 1rem;
+    margin-left: .10rem;
+}
+
+.about-games-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));  
+    justify-items: center;
+    gap: 30px;
+}
+
+.about-games{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid #222;
+    border-radius: 10px;
+}
+
+.about-connections-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+}
+
+.about-connections{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+    
+}
+
+.about-connections-img{
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.about-connections-link{
+    font-size: .9rem;
+    text-decoration: none;
+    color: #777;
+    transition: .3s ease;
+}
+
+.about-connections:hover{
+    .about-connections-link{
+    color: white;
+    text-shadow: 0 0 10px white;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .about-grid{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+}
+
+.footer{
+    color: #222;
+    font-size: .7rem;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.4rem;
+    border-top: 1px solid #222;
+    background-color: #111111;
+}
