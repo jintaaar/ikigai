@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝗜𝗞𝗜𝗚𝗔𝗜 生き甲斐 𝗟𝗘𝗚𝗔𝗖𝗬</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="discord-widget.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <div class="menu-container">
+
+            <button class="menu-btn" id="menu-btn"><strong>☰</strong></button>
+            <div class="menu-overlay" onclick="closeMenu()"></div>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="members.html">Members</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="news.html">News</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjyB8L9kWrnWd9bgaFZAZojtJx5KCW9Il7itQAc0xYwwFybQ/viewform" target="_blank" class="menu-join">Join us!</a>
+            </nav>
+            
+        </div>
+        
+        <div class="header">
+            <div class="head-container">
+                <div class="logo-title">
+                    <div class="logo-name">𝗜𝗞𝗜𝗚𝗔𝗜 生き甲斐 𝗟𝗘𝗚𝗔𝗖𝗬</div>
+                </div>
+                
+                <div class="nav-buttons">
+
+                    <div class="start">
+                        <nav>
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="members.html">Members</a>
+                            <a href="gallery.html" class="active">Gallery</a>
+                            <a href="news.html">News</a>
+                        </nav>
+                    </div>
+
+                    <div class="end">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjyB8L9kWrnWd9bgaFZAZojtJx5KCW9Il7itQAc0xYwwFybQ/viewform" target="_blank" class="join">Join us!</a>
+                        
+                    </div>
+
+                </div>
+
+                
+
+                
+
+                
+            </div>
+        </div>
+
+        <!-- Discord widget button -->
+        <div class="showcard-container"> <button class="show-card" onclick="showCard()">💭</button> </div>
+
+        <!-- Discord widget card -->
+        <div class="card">
+            <div class="discord-card" id="discord-card"> 
+                <div class="head">
+                    <h3 class="serverName" id="serverName">My Server</h3>
+                    <button class="hide-card" onclick="closeCard()" id="hide">✗</button>
+                </div>
+
+                <p>
+                    <div class="dot-symbol">●</div>
+                    <div class="online-text"> 𝑶𝒏𝒍𝒊𝒏𝒆 - <span id="online">0</span> </div>
+                </p>
+
+                <div class="avatar-position">
+                    <div class="avatars">
+
+                        <div class="avatar online">
+                            <img src="Discord-profiles/profile1.webp">
+                        </div>
+
+                        <div class="avatar online">
+                            <img src="Discord-profiles/profile2.webp">
+                        </div>
+
+                        <div class="avatar idle">
+                            <img src="Discord-profiles/profile3.webp">
+                        </div>
+
+                        <div class="avatar idle">
+                            <img src="Discord-profiles/profile4.webp">
+                        </div>
+
+                        <div class="avatar dnd">
+                            <img src="Discord-profiles/profile5.webp">
+                        </div>
+
+                    </div>
+                </div>
+    
+                <div class="lower-part">
+                    <a id="joinBtn" href="https://discord.com/invite/5m6chs7nX4" target="_blank">Join Server</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="gallery-page">
+                <div class="gallery-container">
+
+                    <div class="gallery-title">
+                        ｡˚꒰ঌ 𝑴𝒆𝒅𝒊𝒂 𝑮𝒂𝒍𝒍𝒆𝒓𝒚 ໒꒱˚｡
+                    </div>
+                    <div class="gallery-desc">✰ 𝟓 𝒇𝒐𝒍𝒅𝒆𝒓𝒔 • 𝟏𝟒𝟑 𝒎𝒆𝒅𝒊𝒂 𝒄𝒐𝒍𝒍𝒆𝒄𝒕𝒊𝒐𝒏𝒔</div>
+                    
+                    <div class="gallery-grid">
+                        <div class="gallery-folder" data-folder="1">
+                            <div class="folder-img"><img src="gallery/01/01.jpg" class="img-img"></div>
+                            <div class="folder-body">
+                                <div class="folder-name">𝟐𝟎𝟐𝟐 𝒀𝒆𝒂𝒓 𝑬𝒏𝒅 𝑷𝒂𝒓𝒕𝒚</div>
+                                <div class="folder-detail">𝟓 𝒑𝒉𝒐𝒕𝒐𝒔 | 𝟏 𝒗𝒊𝒅𝒆𝒐</div>
+                                <div class="folder-date">𝒄𝒓𝒆𝒂𝒕𝒆𝒅 𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟐</div>
+                            </div>
+                        </div>
+                        <div class="gallery-folder" data-folder="2">
+                            <div class="folder-img"><img src="gallery/02/01.jpg" class="img-img"></div>
+                            <div class="folder-body">
+                                <div class="folder-name">𝑩𝒖𝒅 𝑴𝒆𝒎𝒐𝒓𝒊𝒆𝒔</div>
+                                <div class="folder-detail">𝟏𝟎 𝒑𝒉𝒐𝒕𝒐𝒔 | 𝟎 𝒗𝒊𝒅𝒆𝒐</div>
+                                <div class="folder-date">𝒄𝒓𝒆𝒂𝒕𝒆𝒅 𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟐</div>
+                            </div>
+                        </div>
+                        <div class="gallery-folder" data-folder="3">
+                            <div class="folder-img"><img src="gallery/03/01.webp" class="img-img"></div>
+                            <div class="folder-body">
+                                <div class="folder-name">𝑬𝒈𝒈𝒚 𝑷𝒂𝒓𝒕𝒚</div>
+                                <div class="folder-detail">𝟖 𝒑𝒉𝒐𝒕𝒐𝒔 | 𝟎 𝒗𝒊𝒅𝒆𝒐</div>
+                                <div class="folder-date">𝒄𝒓𝒆𝒂𝒕𝒆𝒅 𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟒</div>
+                            </div>
+                        </div>
+                        <div class="gallery-folder" data-folder="4">
+                            <div class="folder-img"><img src="gallery/04/01.webp" class="img-img"></div>
+                            <div class="folder-body">
+                                <div class="folder-name">𝑴𝒊𝒏𝒆𝒄𝒓𝒂𝒇𝒕</div>
+                                <div class="folder-detail">𝟓 𝒑𝒉𝒐𝒕𝒐𝒔 | 𝟎 𝒗𝒊𝒅𝒆𝒐</div>
+                                <div class="folder-date">𝒄𝒓𝒆𝒂𝒕𝒆𝒅 𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟒</div>
+                            </div>
+                        </div>
+                        <div class="gallery-folder" data-folder="5">
+                            <div class="folder-img"><img src="gallery/05/01.jpg" class="img-img"></div>
+                            <div class="folder-body">
+                                <div class="folder-name">𝑶𝒕𝒉𝒆𝒓 𝑮𝒂𝒎𝒆𝒔</div>
+                                <div class="folder-detail">𝟗 𝒑𝒉𝒐𝒕𝒐𝒔 | 𝟎 𝒗𝒊𝒅𝒆𝒐</div>
+                                <div class="folder-date">𝒄𝒓𝒆𝒂𝒕𝒆𝒅 𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟒</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div class="media-modal">
+
+            <div class="media-window">
+
+                <!-- header -->
+                <div class="media-header">
+
+                    <div class="media-info">
+                        <div class="media-title"></div>
+                        <div class="media-desc"></div>
+                    </div>
+
+                    <button class="media-close">×</button>
+
+                </div>
+
+                <!-- content -->
+                <div class="media-viewer"></div>
+
+            </div>
+
+        </div>
+
+        <div class="media-preview">
+            <button class="preview-close">×</button>
+            <img class="preview-img" src="" alt="">
+        </div>
+    </div>
+
+    <script src="general.js"></script>
+    <script src="gallery.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,203 @@
+.discord-card {
+
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid white;
+    box-shadow: 0 0 15px #ffffff;
+
+    color: white;
+    font-family: Arial, sans-serif;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: scale(0.9);
+    transition: all 0.8s ease;
+
+    z-index: 100;
+    
+}
+
+.discord-card.show{
+    opacity: 1;
+
+    visibility: visible;
+    pointer-events: auto;
+    transform: scale(1);
+    z-index: 100;
+}
+
+.head h3,
+.head h1,
+.head h2 {
+    margin: 0;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dot-symbol{
+    display: inline;
+    color: #2aff83;
+    text-shadow: 0 0 5px #23a55a,
+                 0 0 10px #23a55a,
+                 0 0 20px #23a55a;
+}
+
+.online-text{
+    display: inline;
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+.hide-card{
+    font-size: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.hide-card:hover{
+
+    color: #ffffff;
+    border-color: #ffffff;
+    text-shadow: 0 0 5px #ffffff,
+                 0 0 10px #ffffff,
+                 0 0 20px #ffffff;
+}
+
+.showcard-container{
+
+
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 20;
+}
+
+
+.show-card{
+
+    font-size: 25px;
+    padding: 10px;
+    background-color: #111111;
+    
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+    transition: .3s ease;
+}
+
+.show-card.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+}
+
+.show-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+#joinBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background: white;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#joinBtn:hover {
+
+    box-shadow: 0 0 15px #ffffff;
+}
+
+.avatar-position{
+    margin-bottom: 13px;
+    margin-left: 10px;
+    
+
+}
+.avatar {
+    position: relative;
+    display: inline-block;
+    margin-left: -8px;
+}
+
+.avatar img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #111;
+    display: block;
+    
+}
+
+.avatar::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #111;
+}
+
+.avatar.online::after {
+    background: #23a55a;
+}
+
+.avatar.idle::after {
+    background: #f0b232;
+}
+
+.avatar.dnd::after {
+    background: #f23f43;
+}
+
+.avatar.offline::after {
+    background: #80848e;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatars {
+    display: flex;
+}
