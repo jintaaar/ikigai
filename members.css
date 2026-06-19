@@ -203,7 +203,7 @@
 }
 
 .member-card-body{
-    padding: .50rem .70rem .65rem;
+    padding: .4rem .6rem .5rem;
 }
 
 .member-card-name{
@@ -215,7 +215,7 @@
 .member-card-role{
     color: #777;
     font-size: .7rem;
-    margin-bottom: 1rem;
+    margin-bottom: .85rem;
     margin-left: .10rem;
 }
 
