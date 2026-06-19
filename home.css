@@ -75,16 +75,11 @@
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .low-join{
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 60px;
-    min-width: 220px;
+    
     background-color: #ffffff;
     color: #111;
     border: 1px solid #ffffff;
@@ -103,12 +98,7 @@
 }
 
 .low-about{
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    min-width: 130px;
+    
     background-color: transparent;
     color: #777;
     border: 1px solid #2a2a2a;
@@ -123,4 +113,26 @@
     color: #ffffff;
     border-color: #777;
     text-shadow: 0 0 10px #ffffff;
+}
+
+.low-join,
+.low-about{
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: clamp(40px, 5vw, 60px);
+
+    font-size: clamp(12px, 1.2vw, 16px);
+
+    padding: 0 clamp(10px, 2vw, 20px);
+
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .3s ease;
+
+    text-decoration: none;
 }

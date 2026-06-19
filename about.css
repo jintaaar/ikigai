@@ -88,6 +88,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
+@media screen and (max-width: 500px){
+    .about-content-grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
 
 .about-name{
     color: #ffffff;
@@ -120,6 +126,13 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     
+}
+
+@media screen and (max-width: 500px){
+    .about-connections-grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }
 
 .about-connections{

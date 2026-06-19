@@ -38,20 +38,23 @@
 
 /* Gallery Toolbar */
 .member-gallery-settings{
+    padding: 10px;
     border-top: 1px solid #777;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    height: 60px;
+    align-items: start;
+
+    
 }
 
 .start-settings{
-    margin-left: 10px;
+    
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: start;
     gap: 2%;
+    flex-wrap: wrap;
 }
 
 .sort-by select{
@@ -63,6 +66,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: .3s ease;
+    margin-bottom: 10px;
 }
 
 .sort-by option{
@@ -86,6 +90,8 @@
     border-radius: 5px;
     cursor: pointer;
     transition: .3s ease;
+    margin-bottom: 10px;
+    
 }
 
 .sort-button:hover{
