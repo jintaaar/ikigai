@@ -74,13 +74,25 @@ btn.addEventListener("click", () => {
 
     menu.classList.toggle("open");
     overlay.classList.toggle("open");
+    
+    if (menu.classList.contains("open")) {
+        document.documentElement.classList.add("no-scroll");
+        document.body.classList.add("no-scroll");
+    } else {
+        document.documentElement.classList.remove("no-scroll");
+        document.body.classList.remove("no-scroll");
+    }
 
 });
 
 function closeMenu() {
     document.querySelector(".menu")
         .classList.remove("open");
+        document.documentElement.classList.remove("no-scroll");
+        document.body.classList.remove("no-scroll");
 
     document.querySelector(".menu-overlay")
         .classList.remove("open");
+        document.documentElement.classList.remove("no-scroll");
+        document.body.classList.remove("no-scroll");
 }

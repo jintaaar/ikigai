@@ -65,7 +65,8 @@ body {
     display: grid;
     flex-direction: column;
 
-    top: 4.24rem;
+    padding-top: 4.4rem;
+    top: 0rem;
     right: 0;
     left: 0;
 
@@ -126,6 +127,8 @@ body {
 
 .menu a:hover{
     border: 1px solid white;
+    border-right:1px solid #111111;
+    border-left: 1px solid #111111;
     background-color: #2a2a2a;
 }
 
@@ -232,9 +235,16 @@ nav a:hover{
 /* Page Styles */
 
 
-html {
+html,
+body {
     overflow-y: scroll;
 
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .page {
@@ -251,4 +261,13 @@ html {
 .page.leaving {
     opacity: 0;
     transform: translateY(15px);
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html.no-scroll,
+body.no-scroll {
+    overflow: hidden;
 }

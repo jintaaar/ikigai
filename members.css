@@ -36,126 +36,142 @@
 }
 
 
-/* Gallery Toolbar */
+/* MAIN SETTINGS BAR */
 .member-gallery-settings{
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
     border-top: 1px solid #777;
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-
-    
 }
 
-.start-settings{
-    
-    display: flex;
-    flex-direction: row;
+/* SEARCH */
+.search-container{
+    flex: 1;
+}
+
+#memberSearch{
     width: 100%;
-    justify-content: start;
-    gap: 2%;
+    padding: 0 12px;        /* IMPORTANT: removes extra height */
+    height: 40px;           /* 🔥 force 30px */
+    box-sizing: border-box;
+
+    background: #181818;
+    color: white;
+
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+
+    font-size: 0.9rem;
 }
 
-@media screen and (max-width: 600px){
-    .start-settings{
-        flex-direction: column;
-    }
+#memberSearch:focus{
+    outline: none;
+    border-color: #777;
 }
 
-.sort-by select{
-    width: 150px;
-    height: 30px;
-    color: #777;
-    background-color: #111111;
-    border: 1px solid #777;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .3s ease;
-    margin-bottom: 10px;
+/* TOOLBAR */
+.toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-.sort-by option{
-    background-color: #ffffff;
-    color: #777;
+/* LEFT SIDE */
+.start-settings{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
-
-.sort-by select:hover{
-    color: #111111;
-    background-color: white;
-    border-color: white;
-    box-shadow: 0 0 10px #ffffff;
-}
-
-.sort-button{
-    width: 73px;
-    height: 30px;
-    color: #777;
-    background-color: #111111;
-    border: 1px solid #777;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .3s ease;
-    margin-bottom: 10px;
-    
-}
-
-.sort-button:hover{
-    color: #111111;
-    background-color: white;
-    border-color: white;
-    box-shadow: 0 0 10px #ffffff;
-}
-
-.sort-button.active {
-    background: white;
-    color: #111;
-    border-color: white;
-}
-
 
 .sort-button-container{
     display: flex;
-    flex-direction: row;
-    gap: 5%;
+    gap: 6px;
 }
 
+/* RIGHT SIDE */
 .end-settings{
-    margin-right: 10px;
     display: flex;
-    flex-direction: row;
-
-}
-
-.view-button{
-    width: 40px;
-    height: 30px;
-    color: #777;
-    background-color: #111111;
-    border: 1px solid #777;
-    border-radius: 5px;
-    cursor: pointer; 
-    transition: .3s ease;
-}
-
-.view-button:hover{
-    color: #111111;
-    background-color: white;
-    border-color: white;
-    box-shadow: 0 0 10px #ffffff;
-}
-
-.view-button.active {
-    background: white;
-    color: #111;
-    border-color: white;
+    align-items: center;
 }
 
 .toggle-view{
     display: flex;
-    flex-direction: row;
-    gap: 5%;
+    gap: 6px;
 }
 
+/* BUTTONS */
+.sort-button,
+.view-button,
+.sort-by select{
+    height: 30px;           /* 🔥 unified height */
+    line-height: 30px;
+
+    background: #111;
+    color: #777;
+
+    border: 1px solid #777;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+/* SELECT FIX (needs reset padding too) */
+.sort-by select{
+    width: 145px;
+    padding: 0 10px;        /* remove extra height */
+}
+
+/* BUTTON WIDTHS */
+.sort-button{
+    width: 70px;
+}
+
+.view-button{
+    width: 38px;
+}
+
+/* HOVER */
+.sort-button:hover,
+.view-button:hover,
+.sort-by select:hover{
+    color: #111;
+    background: white;
+    border-color: white;
+    box-shadow: 0 0 10px white;
+}
+
+.sort-button.active,
+.view-button.active{
+    background: white;
+    color: #111;
+    border-color: white;
+}
+
+/* MOBILE */
+@media screen and (max-width: 850px){
+
+    .member-gallery-settings{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-container{
+        width: 100%;
+    }
+
+    .toolbar{
+        width: 100%;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .start-settings{
+        flex-wrap: wrap;
+    }
+}
 /* Gallery */
 .member-gallery-container{
     display: block;
@@ -241,7 +257,7 @@
 .member-list-header{
     color: #777;
     display: grid;
-    grid-template-columns: 20px 40px 1fr 240px 120px 20px;
+    grid-template-columns:  20px 40px 1fr 240px 120px 20px;
     align-items: center;
     font-size: 1rem;
     padding: .48rem 1rem;
@@ -261,6 +277,36 @@
     box-sizing: border-box;
     cursor: pointer;
 }
+
+@media screen and (max-width: 850px){
+    .member-list-date, .member-list-date-header{
+        display: none;
+    }
+    .member-profile-list, .member-list-header{
+        display: grid;
+        grid-template-columns: 20px 40px 1fr 120px 20px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .member-list-date, .member-list-date-header, .list-spacing{
+        display: none;
+    }
+    .member-profile-list, .member-list-header{
+        display: grid;
+        grid-template-columns: 40px 1fr 75px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .member-gallery-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 
 .member-profile-list:hover{
     
@@ -316,7 +362,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: min(420px, 95vw);
+    width: min(350px, 95vw);
     height: 100vh;
     background: #141414;
     box-shadow: -5px 0 20px rgba(0,0,0,0.2);
@@ -333,7 +379,7 @@
 }
 
 .dp-header{
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #333;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -383,7 +429,7 @@
 }
 
 .dp-profile-end{
-    margin-bottom: .9rem;
+    margin-bottom: .4rem;
     margin-top: .2rem;
     margin-left: 1.5rem;
     display: flex;
@@ -393,17 +439,17 @@
 
 .dp-label{
     color: #444444;
-    font-size: .7rem;
+    font-size: .6rem;
 }
 
 .dp-detail{
     color: #999;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .dp-name{
     color: white;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .dp-profile-title{
@@ -457,4 +503,8 @@
 
 .games{
     font-family: sans-serif;
+}
+
+.connections-container{
+    border-bottom: 0px;
 }

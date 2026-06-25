@@ -1,7 +1,8 @@
 const profiles = [{
     dataid: '1',
-    image: 'Discord-profiles/profile1.webp',
+    image: 'Discord-profiles/2.png',
     name: '𝒊𝒌𝒈_𝒏𝒂𝒃𝒊',
+    dataname: 'ikg_nabi',
     role: '𝒇𝒐𝒖𝒏𝒅𝒆𝒓',
     joined: '𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟐',
     birthday: '𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐',
@@ -20,8 +21,9 @@ const profiles = [{
     ]
 },{
     dataid: '2',
-    image: 'Discord-profiles/profile2.webp',
+    image: 'Discord-profiles/2.png',
     name: '𝒊𝒌𝒈_𝒌𝒆𝒊𝒈𝒏',
+    dataname: 'ikg_keign',
     role: '𝒇𝒐𝒖𝒏𝒅𝒆𝒓',
     joined: '𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟐',
     birthday: '𝒔𝒆𝒑𝒕𝒆𝒎𝒃𝒆𝒓 𝟖',
@@ -39,8 +41,9 @@ const profiles = [{
     ]
 },{
     dataid: '3',
-    image: 'Discord-profiles/profile3.webp',
+    image: 'Discord-profiles/1.png',
     name: '𝒊𝒌𝒈_𝒓𝒆𝒂𝒉𝒏',
+    dataname: 'ikg_reahn',
     role: '𝒂𝒅𝒎𝒊𝒏',
     joined: '𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
     birthday: '𝒋𝒖𝒏𝒆 𝟐𝟔',
@@ -57,8 +60,9 @@ const profiles = [{
     ]
 },{
     dataid: '4',
-    image: 'Discord-profiles/profile4.webp',
+    image: 'Discord-profiles/3.png',
     name: '𝒊𝒌𝒈_𝒃𝒆𝒂𝒖',
+    dataname: 'ikg_beau',
     role: '𝒎𝒆𝒎𝒃𝒆𝒓',
     joined: '𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
     birthday: '𝒏𝒐𝒗𝒆𝒎𝒃𝒆𝒓 𝟏𝟒',
@@ -76,8 +80,9 @@ const profiles = [{
     ]
 },{
     dataid: '5',
-    image: 'Discord-profiles/profile5.webp',
+    image: 'Discord-profiles/4.png',
     name: '𝒊𝒌𝒈_𝒍𝒊𝒍𝒊𝒕𝒉',
+    dataname: 'ikg_lilith',
     role: '𝒎𝒆𝒎𝒃𝒆𝒓',
     joined: '𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟐',
     birthday: '𝒏𝒐𝒗𝒆𝒎𝒃𝒆𝒓 𝟏𝟒',
@@ -96,8 +101,9 @@ const profiles = [{
     ]
 },{
     dataid: '6',
-    image: 'Discord-profiles/profile6.webp',
+    image: 'Discord-profiles/1.png',
     name: '𝒊𝒌𝒈_𝒍𝒖𝒄𝒊𝒐𝒕𝒂𝒏',
+    dataname: 'ikg_luciotan',
     role: '𝒎𝒆𝒎𝒃𝒆𝒓',
     joined: '𝒂𝒑𝒓𝒊𝒍 𝟐𝟎𝟐𝟒',
     birthday: '𝒐𝒄𝒕𝒐𝒃𝒆𝒓 𝟏𝟏',
@@ -114,13 +120,15 @@ const profiles = [{
     ]
 },{
     dataid: '7',
-    image: 'Discord-profiles/profile7.jpg',
+    image: 'Discord-profiles/2.png',
     name: '𝒊𝒌𝒈_𝒋𝒊𝒏𝒕𝒂𝒓',
+    dataname: 'ikg_jintar',
     role: '𝒎𝒆𝒎𝒃𝒆𝒓',
     joined: '𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟐',
     birthday: '𝒎𝒂𝒚 𝟏𝟓',
     datajoined: '2022-07-01',
     databirthday: '2000-05-15',
+
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝒋𝒊𝒏𝒕𝒂𝒓" },
         {name: "𝒓𝒐𝒃𝒍𝒐𝒙", icon: "apps/roblox.webp", id: "@𝒋𝒊𝒏𝒕𝒂𝒂𝒂𝒓" },

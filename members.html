@@ -71,10 +71,10 @@
                     <button class="hide-card" onclick="closeCard()" id="hide">✗</button>
                 </div>
 
-                <p>
+                <div class="online-section">
                     <div class="dot-symbol">●</div>
                     <div class="online-text"> 𝑶𝒏𝒍𝒊𝒏𝒆 - <span id="online">0</span> </div>
-                </p>
+                </div>
 
                 <div class="avatar-position">
                     <div class="avatars">
@@ -143,6 +143,7 @@
                     </div> 
                 </div>
             </div>
+            
             <div class="dp-profile dp-column">
                 <div class="dp-profile-title">𝑮𝒂𝒎𝒆 𝑪𝒐𝒍𝒍𝒆𝒄𝒕𝒊𝒐𝒏𝒔</div>
                 <div class="dp-profile-grid game-collection">
@@ -151,7 +152,7 @@
                 </div>
             </div>
 
-            <div class="dp-profile dp-column">
+            <div class="dp-profile dp-column connections-container">
                 <div class="dp-profile-title">𝑪𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏𝒔</div>
                 <div class="dp-profile-grid connections">
 
@@ -179,30 +180,37 @@
 
                         <div class="member-gallery-settings">
 
-                            <div class="start-settings">
-                                <div class="sort-by">
-                                    <select id="sort-field" onchange="render()">
-                                        <option value="id">Default</option>
-                                        <option value="name">by Name</option>
-                                        <option value="joined">by Date Joined</option>                                   
-                                        <option value="birthday">by Birthday</option>
-                                    </select>
-                                </div>
-
-                                <div class="sort-button-container">
-
-                                    <button class="sort-button" data-order="asc" onclick="setOrder('asc', this)">⬆ ASC</button>
-                                    <button class="sort-button" data-order="desc" onclick="setOrder('desc', this)">⬇ DESC</button>
-
-                                </div>
+                            <div class="search-container">
+                                <input type="text" id="memberSearch" placeholder="Search members...">
                             </div>
 
-                            <div class="end-settings">
-                                <div class="toggle-view">
+                            <div class="toolbar">
+                                <div class="start-settings">
+                                    <div class="sort-by">
+                                        <select id="sort-field" onchange="render()">
+                                            <option value="id">Default</option>
+                                            <option value="name">by Name</option>
+                                            <option value="joined">by Date Joined</option>                                   
+                                            <option value="birthday">by Birthday</option>
+                                        </select>
+                                    </div>
 
-                                    <button class="view-button active" data-view="grid" onclick="setView('grid')">⊞</button>
-                                    <button class="view-button" data-view="list" onclick="setView('list')">☰</button>
+                                    <div class="sort-button-container">
 
+                                        <button class="sort-button" data-order="asc" onclick="setOrder('asc', this)">⬆ ASC</button>
+                                        <button class="sort-button" data-order="desc" onclick="setOrder('desc', this)">⬇ DESC</button>
+
+                                    </div>
+                                </div>
+
+                                <div class="end-settings">
+                                    
+                                    <div class="toggle-view">
+
+                                        <button class="view-button active" data-view="grid" onclick="setView('grid')">⊞</button>
+                                        <button class="view-button" data-view="list" onclick="setView('list')">☰</button>
+
+                                    </div>
                                 </div>
                             </div>
                             

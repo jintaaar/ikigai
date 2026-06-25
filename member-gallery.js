@@ -3,15 +3,17 @@
 ========================= */
 let sortOrder = "asc";
 let currentView = "grid";
+let searchQuery = "";
 
 /* =========================
    ELEMENTS
 ========================= */
 const sortField = document.getElementById("sort-field");
+const searchInput = document.getElementById("memberSearch");
 const gallery = document.querySelector(".member-gallery-grid");
 
 /* =========================
-   UPDATE BUTTON STATE
+   BUTTON STATES
 ========================= */
 function updateButtonState() {
 
@@ -27,47 +29,54 @@ function updateButtonState() {
     });
 }
 
-/* =========================
-   ACTIVE BUTTON
-========================= */
 function setActive(order) {
 
     document.querySelectorAll(".sort-button").forEach(btn => {
-
-        btn.classList.toggle(
-            "active",
-            btn.dataset.order === order
-        );
+        btn.classList.toggle("active", btn.dataset.order === order);
     });
 }
 
 function setActiveView(view) {
 
     document.querySelectorAll(".view-button").forEach(btn => {
-
-        btn.classList.toggle(
-            "active",
-            btn.dataset.view === view
-        );
+        btn.classList.toggle("active", btn.dataset.view === view);
     });
 }
-/* =========================
-   SORT PROFILES ARRAY
-========================= */
-function sortProfiles() {
 
-    const field = sortField.value;
+/* =========================
+   PROCESS DATA (SEARCH + SORT)
+========================= */
+function processProfiles() {
 
     updateButtonState();
 
+    let result = [...profiles];
+
+    /* =========================
+       SEARCH (USES data-name)
+    ========================= */
+    if (searchQuery.trim() !== "") {
+
+        result = result.filter(profile =>
+            (profile.dataname || "")
+                .toLowerCase()
+                .includes(searchQuery)
+        );
+    }
+
+    const field = sortField.value;
+
+    /* =========================
+       SORT BY ID (DEFAULT)
+    ========================= */
     if (field === "id") {
 
-        profiles.sort((a, b) =>
+        result.sort((a, b) =>
             Number(a.dataid) - Number(b.dataid)
         );
 
         sortOrder = null;
-        return;
+        return result;
     }
 
     if (sortOrder === null) {
@@ -76,44 +85,47 @@ function sortProfiles() {
 
     setActive(sortOrder);
 
+    /* =========================
+       SORT OPTIONS
+    ========================= */
     if (field === "name") {
-        profiles.sort((a, b) =>
-            a.name.localeCompare(b.name)
+        result.sort((a, b) =>
+            (a.dataname || "").localeCompare(b.dataname || "")
         );
     }
 
     if (field === "joined") {
-        profiles.sort((a, b) =>
-            new Date(a.datajoined) - new Date(b.datajoined)||
-            a.name.localeCompare(b.name)
+        result.sort((a, b) =>
+            new Date(a.datajoined) - new Date(b.datajoined)
         );
     }
 
     if (field === "birthday") {
-
-        profiles.sort((a, b) =>
-            new Date(a.databirthday) - new Date(b.databirthday)||
-            a.name.localeCompare(b.name)
+        result.sort((a, b) =>
+            new Date(a.databirthday) - new Date(b.databirthday)
         );
     }
 
     if (sortOrder === "desc") {
-        profiles.reverse();
+        result.reverse();
     }
+
+    return result;
 }
 
 /* =========================
-   RENDER GRID
+   GRID RENDER
 ========================= */
-function renderGrid() {
+function renderGrid(data) {
 
     let html = '';
 
-    profiles.forEach(profile => {
+    data.forEach(profile => {
 
         html += `
-            <div class="member-profile member-profile-card" 
+            <div class="member-profile member-profile-card"
                 data-id="${profile.dataid}"
+                data-name="${profile.dataname}"
                 data-joined="${profile.datajoined}"
                 data-birthday="${profile.databirthday}">
 
@@ -135,37 +147,41 @@ function renderGrid() {
 }
 
 /* =========================
-   RENDER LIST
+   LIST RENDER
 ========================= */
-function renderList() {
+function renderList(data) {
 
     let html = `
         <div class="member-list-header">
-            <div></div>
+            <div class="list-spacing"></div>
             <div></div>
             <div>𝒏𝒂𝒎𝒆</div>
-            <div>𝒓𝒐𝒍𝒆</div>
-            <div>𝒋𝒐𝒊𝒏𝒆𝒅 𝒅𝒂𝒕𝒆</div>
-            <div></div>
+            <div class="member-list-role-header">𝒓𝒐𝒍𝒆</div>
+            <div class="member-list-date-header">𝒋𝒐𝒊𝒏𝒆𝒅</div>
+            <div class="list-spacing"></div>
         </div>
     `;
 
-    profiles.forEach(profile => {
+    data.forEach(profile => {
 
         html += `
             <div class="member-profile member-profile-list"
                 data-id="${profile.dataid}"
+                data-name="${profile.dataname}"
                 data-joined="${profile.datajoined}"
                 data-birthday="${profile.databirthday}">
 
-                <div></div>
+                <div class="list-spacing"></div>
+
                 <div class="member-profile-img member-list-img">
                     <img src="${profile.image}">
                 </div>
+
                 <div class="member-name member-list-name">${profile.name}</div>
                 <div class="member-role member-list-role">${profile.role}</div>
                 <div class="member-date member-list-date">${profile.joined}</div>
-                <div></div>
+
+                <div class="list-spacing"></div>
 
             </div>
         `;
@@ -179,16 +195,16 @@ function renderList() {
 ========================= */
 function render() {
 
-    sortProfiles();
+    const data = processProfiles();
 
     gallery.innerHTML =
         currentView === "grid"
-            ? renderGrid()
-            : renderList();
+            ? renderGrid(data)
+            : renderList(data);
 }
 
 /* =========================
-   SET VIEW
+   VIEW SWITCH
 ========================= */
 function setView(view) {
 
@@ -199,13 +215,13 @@ function setView(view) {
             ? "member-gallery-grid"
             : "member-gallery-list";
 
-    setActiveView(view); // 👈 ADD THIS
+    setActiveView(view);
 
     render();
 }
 
 /* =========================
-   SET ORDER
+   SORT ORDER
 ========================= */
 function setOrder(order) {
 
@@ -222,6 +238,11 @@ function setOrder(order) {
    EVENTS
 ========================= */
 sortField.addEventListener("change", render);
+
+searchInput.addEventListener("input", (e) => {
+    searchQuery = e.target.value.toLowerCase();
+    render();
+});
 
 /* =========================
    INIT
