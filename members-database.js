@@ -24,7 +24,7 @@ const profiles = [{
         artist: "@𝒌𝒚𝒊𝒊𝒐𝒑𝒕𝒂",
         cover: "spotify/icons/nabi.jpg",
         mp3: "spotify/musics/nabi.mp3",
-        spotify: "https://open.spotify.com/playlist/44VDHXRPvyrlOx6FsvlPDa"
+        spotify: "https://open.spotify.com/playlist/6SdkbxaAZi2bTMSPbjIgnt"
     }
 },{
     dataid: '2',
