@@ -643,6 +643,7 @@
 }
 
 .music-title{
+    line-height: 1.1;
     color: white;
     font-size: .9rem;
     font-weight: 600;

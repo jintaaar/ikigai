@@ -36,6 +36,7 @@
 }
 
 .serverName{
+    line-height: 1;
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
@@ -65,6 +66,7 @@
 }
 
 .online-text{
+    line-height: 1;
     margin-left: .6rem;
     display: inline;
     font-size: .9rem;
