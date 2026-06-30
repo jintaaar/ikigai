@@ -29,7 +29,7 @@ const SERVER_ID = "1168151047265591347";
 fetch(`https://discord.com/api/guilds/1168151047265591347/widget.json`)
 .then(res => res.json())
 .then(data => {
-    document.getElementById("serverName").textContent = data.name;
+    
     document.getElementById("online").textContent = data.presence_count;
 });
 

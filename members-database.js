@@ -18,7 +18,14 @@ const profiles = [{
     connections: [
         {name: "𝒅𝒊𝒔𝒄𝒐𝒓𝒅", icon: "apps/discord.jpg", id: "@𝒊𝒌𝒈_𝒏𝒂𝒃𝒊" },
         {name: "𝒕𝒊𝒌𝒕𝒐𝒌", icon: "apps/tiktok.avif", id: "@𝒊𝒌𝒈_𝒏𝒂𝒃𝒊" }
-    ]
+    ],
+    music: {
+        title: "✩°｡⋆⸜ 🦢✮",
+        artist: "@𝒌𝒚𝒊𝒊𝒐𝒑𝒕𝒂",
+        cover: "spotify/icons/nabi.jpg",
+        mp3: "spotify/musics/nabi.mp3",
+        spotify: "https://open.spotify.com/playlist/44VDHXRPvyrlOx6FsvlPDa"
+    }
 },{
     dataid: '2',
     image: 'profiles/dongdong1.png',
@@ -38,7 +45,14 @@ const profiles = [{
     connections: [
         {name: "𝒅𝒊𝒔𝒄𝒐𝒓𝒅", icon: "apps/discord.jpg", id: "@𝒌𝒆𝒊𝒈𝒏." },
         {name: "𝒕𝒊𝒌𝒕𝒐𝒌", icon: "apps/tiktok.avif", id: "@𝒌𝒆𝒊𝒈𝒏_𝒊𝒌𝒊𝒈𝒂𝒊" }
-    ]
+    ],
+    music: {
+        title: "˚ ༘ ೀ⋆｡˚",
+        artist: "@𝒌𝒆𝒊𝒈𝒏",
+        cover: "spotify/icons/keign.webp",
+        mp3: "spotify/musics/keign.mp3",
+        spotify: "https://open.spotify.com/playlist/6SdkbxaAZi2bTMSPbjIgnt"
+    }
 },{
     dataid: '3',
     image: 'profiles/dongdong2.png',
@@ -195,7 +209,7 @@ const profiles = [{
     joined: '𝒋𝒖𝒏𝒆 𝟐𝟎𝟐𝟓',
     birthday: '𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐',
     datajoined: '2025-06-03',
-    databirthday: '2022-11-29',
+    databirthday: '2022-12-02',
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "𝒊𝒌𝒈_あにゃ" },
         {name: "𝒓𝒐𝒃𝒍𝒐𝒙", icon: "apps/roblox.webp", id: "@𝒔𝒖𝒏𝒛𝒆𝒓𝒐𝟎𝟒" },
