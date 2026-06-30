@@ -108,6 +108,8 @@ document.querySelectorAll(".gallery-folder").forEach(folder => {
         });
 
         modal.classList.add("open");
+        document.documentElement.classList.add("no-scroll");
+        document.body.classList.add("no-scroll");
     });
 
 });
@@ -115,6 +117,8 @@ document.querySelectorAll(".gallery-folder").forEach(folder => {
 /* close */
 closeBtn.addEventListener("click", () => {
     modal.classList.remove("open");
+    document.documentElement.classList.remove("no-scroll");
+    document.body.classList.remove("no-scroll");
     viewer.innerHTML = "";
 });
 
@@ -122,6 +126,8 @@ closeBtn.addEventListener("click", () => {
 modal.addEventListener("click", (e) => {
     if (e.target === modal) {
         modal.classList.remove("open");
+        document.documentElement.classList.remove("no-scroll");
+        document.body.classList.remove("no-scroll");
         viewer.innerHTML = "";
     }
 });
