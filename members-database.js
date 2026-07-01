@@ -83,8 +83,8 @@ const profiles = [{
     role: '𝒂𝒅𝒎𝒊𝒏',   
     birthday: '𝒇𝒆𝒃𝒓𝒖𝒂𝒓𝒚 𝟑',
     databirthday: '2022-02-03',
-    joined: '𝒔𝒆𝒑𝒕𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
-    datajoined: '2024-09-21',  
+    joined: '𝒂𝒖𝒈𝒖𝒔𝒕 𝟐𝟎𝟐𝟒',
+    datajoined: '2024-08-08',  
     
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝑺𝒑𝒆𝒆𝒅𝒚" },
@@ -103,8 +103,8 @@ const profiles = [{
     role: '𝒎𝒆𝒎𝒃𝒆𝒓', 
     birthday: '𝒏𝒐𝒗𝒆𝒎𝒃𝒆𝒓 𝟏𝟒',
     databirthday: '2022-11-14',
-    joined: '𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
-    datajoined: '2023-12-01',
+    joined: '𝒋𝒂𝒏𝒖𝒂𝒓𝒚 𝟐𝟎𝟐𝟒',
+    datajoined: '2024-01-13',
     
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝒃𝒆𝒂𝒖°" },
@@ -124,8 +124,8 @@ const profiles = [{
     role: '𝒎𝒆𝒎𝒃𝒆𝒓',   
     birthday: '𝒏𝒐𝒗𝒆𝒎𝒃𝒆𝒓 𝟏𝟒',
     databirthday: '2022-11-14',
-    datajoined: '2022-07-01',
     joined: '𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟐',
+    datajoined: '2022-07-01',
 
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝒍𝒊𝒍𝒊𝒕𝒉" },
@@ -146,8 +146,8 @@ const profiles = [{
     role: '𝒎𝒆𝒎𝒃𝒆𝒓',  
     databirthday: '2022-11-29',
     birthday: '𝒏𝒐𝒗𝒆𝒎𝒃𝒆𝒓 𝟐𝟗',
-    joined: '𝒎𝒂𝒓𝒄𝒉 𝟐𝟎𝟐𝟒',
-    datajoined: '2024-03-10',
+    joined: '𝒋𝒂𝒏𝒖𝒂𝒓𝒚 𝟐𝟎𝟐𝟒',
+    datajoined: '2024-01-17',
     
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝒔𝒂𝒈𝒈𝒚" },
@@ -254,7 +254,7 @@ const profiles = [{
     birthday: '𝒂𝒖𝒈𝒖𝒔𝒕 𝟑𝟎',
     databirthday: '2022-08-30',
     joined: '𝒎𝒂𝒚 𝟐𝟎𝟐𝟓',
-    datajoined: '2025-06-29',
+    datajoined: '2025-05-29',
     
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_ねね" }
@@ -275,6 +275,7 @@ const profiles = [{
     
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_명진" },
+        {name: "𝒉𝒆𝒂𝒓𝒕𝒐𝒑𝒊𝒂", icon: "apps/Heartopia.webp", id: "𝑼𝑰𝑫:𝟕𝒏𝟑𝟔𝟐𝟏𝟏" }
     ],
     connections: [
         {name: "𝒕𝒊𝒌𝒕𝒐𝒌", icon: "apps/tiktok.avif", id: "@𝒑𝒄𝒉𝒚𝒎𝒍𝒅𝒚" }
@@ -311,6 +312,7 @@ const profiles = [{
     
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝒌𝒂𝒛𝒖𝒎𝒊^" },
+        {name: "𝒉𝒆𝒂𝒓𝒕𝒐𝒑𝒊𝒂", icon: "apps/Heartopia.webp", id: "𝑼𝑰𝑫:𝟐𝟒𝒕𝒓𝟒𝒚𝟐𝒑" }
 
     ],
     connections: [
@@ -324,8 +326,8 @@ const profiles = [{
     role: '𝒎𝒆𝒎𝒃𝒆𝒓',
     birthday: '𝒎𝒂𝒚 𝟏𝟗',
     databirthday: '2022-05-19',
-    joined: '𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
-    datajoined: '2024-12-01',
+    joined: '𝒔𝒆𝒑𝒕𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
+    datajoined: '2024-09-01',
     
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝒎𝒂𝒕𝒓𝒊𝒙" },
@@ -344,12 +346,13 @@ const profiles = [{
     role: '𝒎𝒆𝒎𝒃𝒆𝒓',   
     birthday: '𝒐𝒄𝒕𝒐𝒃𝒆𝒓 𝟏𝟎',
     databirthday: '2022-10-10',
-    joined: '𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
-    datajoined: '2024-12-01',
+    joined: '𝒋𝒖𝒍𝒚 𝟐𝟎𝟐𝟒',
+    datajoined: '2024-07-01',
     
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝑳𝒂𝒕𝒕𝒆." },
-        {name: "𝒓𝒐𝒃𝒍𝒐𝒙", icon: "apps/roblox.webp", id: "@𝑩𝒙𝒃𝒚𝒚_𝟗𝟗" }
+        {name: "𝒓𝒐𝒃𝒍𝒐𝒙", icon: "apps/roblox.webp", id: "@𝑩𝒙𝒃𝒚𝒚_𝟗𝟗" },
+        {name: "𝒉𝒆𝒂𝒓𝒕𝒐𝒑𝒊𝒂", icon: "apps/Heartopia.webp", id: "𝑼𝑰𝑫:𝟏𝒌𝒛𝟕𝟔𝟐𝒋𝒙" }
     ],
     connections: [
         {name: "𝒅𝒊𝒔𝒄𝒐𝒓𝒅", icon: "apps/discord.jpg", id: "@_𝒏𝒐𝒕𝒋𝒂𝒛𝒛𝒛" },
@@ -361,10 +364,11 @@ const profiles = [{
     name: '𝒊𝒌𝒈_𝒓𝒖𝒏',
     dataname: 'ikg_run',
     role: '𝒎𝒆𝒎𝒃𝒆𝒓',
-    joined: '𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
     birthday: '𝒎𝒂𝒚 𝟎𝟔',
-    datajoined: '2024-12-01',
     databirthday: '2022-05-06',
+    joined: '𝒇𝒆𝒃𝒖𝒂𝒓𝒚 𝟐𝟎𝟐𝟓',
+    datajoined: '2025-02-07',
+
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_鲁恩" },
         {name: "𝒓𝒐𝒃𝒍𝒐𝒙", icon: "apps/roblox.webp", id: "@𝑫𝒖𝒄𝒌𝒚𝟎𝟐𝟓𝟎" },
@@ -381,8 +385,8 @@ const profiles = [{
     role: '𝒎𝒆𝒎𝒃𝒆𝒓',
     birthday: '𝒏𝒐𝒗𝒆𝒎𝒃𝒆𝒓 𝟏𝟖',
     databirthday: '2022-11-18',
-    joined: '𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
-    datajoined: '2024-12-28',
+    joined: '𝒔𝒆𝒑𝒕𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
+    datajoined: '2024-09-01',
     
     games: [
         {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝒔𝒉𝒊𝒎𝒔" },
@@ -392,6 +396,60 @@ const profiles = [{
     connections: [
         {name: "𝒅𝒊𝒔𝒄𝒐𝒓𝒅", icon: "apps/discord.jpg", id: "@𝒔𝒉𝒊𝒎𝒔𝟎𝟖𝟐𝟓" },
         {name: "𝒕𝒊𝒌𝒕𝒐𝒌", icon: "apps/tiktok.avif", id: "@𝒊𝒌𝒈_𝒔𝒉𝒊𝒎𝒔" }
+    ]
+},{
+    dataid: '20',
+    image: 'profiles/ivy.png',
+    name: '𝒊𝒌𝒈_𝒊𝒗𝒚',
+    dataname: 'ikg_ivy',
+    role: '𝒎𝒆𝒎𝒃𝒆𝒓',
+    birthday: '𝒎𝒂𝒚 𝟏𝟖',
+    databirthday: '2022-05-18',
+    joined: '𝒅𝒆𝒄𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
+    datajoined: '2025-02-17',
+    
+    games: [
+        {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝒊𝒗𝒚" },
+        {name: "𝒉𝒆𝒂𝒓𝒕𝒐𝒑𝒊𝒂", icon: "apps/Heartopia.webp", id: "𝑼𝑰𝑫:𝟏𝒗𝒄𝒎𝟑𝒈𝒕𝒃" }
+    ],
+    connections: [
+        {name: "𝒕𝒊𝒌𝒕𝒐𝒌", icon: "apps/tiktok.avif", id: "@𝒊𝒗𝒚𝒋𝒗𝒂𝒔𝒌𝒊𝟎" }
+    ]
+},{
+    dataid: '21',
+    image: 'profiles/light.png',
+    name: '𝒊𝒌𝒈_𝒍𝒊𝒈𝒉𝒕',
+    dataname: 'ikg_light',
+    role: '𝒎𝒆𝒎𝒃𝒆𝒓',
+    birthday: '𝒏𝒐𝒗𝒆𝒎𝒃𝒆𝒓 𝟏𝟖',
+    databirthday: '2022-11-18',
+    joined: '𝒔𝒆𝒑𝒕𝒆𝒎𝒃𝒆𝒓 𝟐𝟎𝟐𝟒',
+    datajoined: '2024-09-01',
+    
+    games: [
+        {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝒍𝒊𝒈𝒉𝒕" },
+        {name: "𝒉𝒆𝒂𝒓𝒕𝒐𝒑𝒊𝒂", icon: "apps/Heartopia.webp", id: "𝑼𝑰𝑫:𝟏𝟕𝒄𝒃𝟑𝒂𝒘𝒏" }
+    ],
+    connections: [
+        {name: "𝒕𝒊𝒌𝒕𝒐𝒌", icon: "apps/tiktok.avif", id: "@𝒂𝒍𝒇𝒓𝒆𝒅𝒏𝒂𝒗𝒂𝒓𝒓𝒐𝟕𝟑𝟕" }
+    ]
+},{
+    dataid: '22',
+    image: 'profiles/niki.png',
+    name: '𝒊𝒌𝒈_𝒏𝒊𝒌𝒊',
+    dataname: 'ikg_niki',
+    role: '𝒎𝒆𝒎𝒃𝒆𝒓',
+    birthday: '𝒐𝒄𝒕𝒐𝒃𝒆𝒓 𝟒',
+    databirthday: '2022-10-04',
+    joined: '𝒋𝒂𝒏𝒖𝒂𝒓𝒚 𝟐𝟎𝟐𝟓',
+    datajoined: '2025-01-03',
+    
+    games: [
+        {name: "𝒆𝒈𝒈𝒚 𝒑𝒂𝒓𝒕𝒚", icon: "apps/eggyparty.png", id: "@𝒊𝒌𝒈_𝒏𝒊𝒌𝒊" },
+        {name: "𝒓𝒐𝒃𝒍𝒐𝒙", icon: "apps/roblox.webp", id: "@𝒖𝒛𝒂𝒎𝒊𝒄𝒉𝒂𝒏𝟎" }
+    ],
+    connections: [
+        {name: "𝒅𝒊𝒔𝒄𝒐𝒓𝒅", icon: "apps/discord.jpg", id: "@𝒓𝒐𝒙𝒚_𝒒𝒕𝟏𝟒𝟑" }
     ]
 }];
 
